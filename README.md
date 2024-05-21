@@ -1,6 +1,7 @@
 # DL_Assignment_1
 To run the training, please run the following command from the assignment_1 directory. This will use the default configuration
-```python train.py
+```python
+python train.py
 ```
 
 Arguments to be given:
