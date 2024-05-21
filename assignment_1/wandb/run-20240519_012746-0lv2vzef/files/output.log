@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "/nlsasfs/home/ai4bharat/praveens/srija/assignment_1/train.py", line 400, in <module>
+    main()
+  File "/nlsasfs/home/ai4bharat/praveens/srija/assignment_1/train.py", line 115, in main
+    perform_sweep(args.conf_path, args.wandb_project, args.wandb_entity, hyperparameters, train_loader, val_loader, n_features, n_classes)
+  File "/nlsasfs/home/ai4bharat/praveens/srija/assignment_1/train.py", line 254, in perform_sweep
+    sweep_config = json.load(f)
+  File "/nlsasfs/home/ai4bharat/praveens/miniconda3/envs/dl_as/lib/python3.10/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "/nlsasfs/home/ai4bharat/praveens/miniconda3/envs/dl_as/lib/python3.10/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/nlsasfs/home/ai4bharat/praveens/miniconda3/envs/dl_as/lib/python3.10/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/nlsasfs/home/ai4bharat/praveens/miniconda3/envs/dl_as/lib/python3.10/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 39 column 1 (char 892)

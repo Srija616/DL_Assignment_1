@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/nlsasfs/home/ai4bharat/praveens/srija/assignment_1/train.py", line 396, in <module>
+    main()
+  File "/nlsasfs/home/ai4bharat/praveens/srija/assignment_1/train.py", line 119, in main
+    train(hyperparameters, model, loss_fn, optimizer, train_loader, val_loader)
+  File "/nlsasfs/home/ai4bharat/praveens/srija/assignment_1/train.py", line 191, in train
+    train_loss, train_acc = train_epoch(model, loss_fn, train_loader, optimizer)
+  File "/nlsasfs/home/ai4bharat/praveens/srija/assignment_1/train.py", line 208, in train_epoch
+    loss_fn(preds, labels)
+  File "/nlsasfs/home/ai4bharat/praveens/srija/assignment_1/modules/losses.py", line 70, in __call__
+    return self.forward(y_pred, y_true)
+  File "/nlsasfs/home/ai4bharat/praveens/srija/assignment_1/modules/losses.py", line 54, in forward
+    log_probs = y_pred[np.arange(len(y_true)), y_true]
+IndexError: arrays used as indices must be of integer (or boolean) type

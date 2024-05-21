@@ -1,0 +1,15 @@
+
+[1] Train Loss: 0.4081 | Train Acc: 12.7833 | Val Loss: 2.5220 | Val Acc: 7.1000
+[2] Train Loss: 0.1535 | Train Acc: 9.8926 | Val Loss: 0.0000 | Val Acc: 0.0000
+Traceback (most recent call last):
+  File "/nlsasfs/home/ai4bharat/praveens/srija/assignment_1/train.py", line 401, in <module>
+    main()
+  File "/nlsasfs/home/ai4bharat/praveens/srija/assignment_1/train.py", line 119, in main
+    train(hyperparameters, model, loss_fn, optimizer, train_loader, val_loader)
+  File "/nlsasfs/home/ai4bharat/praveens/srija/assignment_1/train.py", line 195, in train
+    train_loss, train_acc = train_epoch(model, loss_fn, train_loader, optimizer)
+  File "/nlsasfs/home/ai4bharat/praveens/srija/assignment_1/train.py", line 215, in train_epoch
+    loss_fn.backward()
+  File "/nlsasfs/home/ai4bharat/praveens/srija/assignment_1/core/classes.py", line 74, in backward
+    if L - i - 1 >= 1:
+KeyboardInterrupt

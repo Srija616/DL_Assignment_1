@@ -1,0 +1,16 @@
+
+[1] Train Loss: 6.6395 | Train Acc: 0.0574 | Val Loss: 5.9179 | Val Acc: 0.0000
+[2] Train Loss: 5.5555 | Train Acc: 0.0111 | Val Loss: 5.4105 | Val Acc: 0.0000
+[3] Train Loss: 5.5073 | Train Acc: 0.0167 | Val Loss: 5.5491 | Val Acc: 0.0000
+Traceback (most recent call last):
+  File "/nlsasfs/home/ai4bharat/praveens/srija/assignment_1/train.py", line 399, in <module>
+    main()
+  File "/nlsasfs/home/ai4bharat/praveens/srija/assignment_1/train.py", line 119, in main
+    train(hyperparameters, model, loss_fn, optimizer, train_loader, val_loader)
+  File "/nlsasfs/home/ai4bharat/praveens/srija/assignment_1/train.py", line 192, in train
+    train_loss, train_acc = train_epoch(model, loss_fn, train_loader, optimizer)
+  File "/nlsasfs/home/ai4bharat/praveens/srija/assignment_1/train.py", line 213, in train_epoch
+    loss_fn.backward()
+  File "/nlsasfs/home/ai4bharat/praveens/srija/assignment_1/core/classes.py", line 73, in backward
+    layer.weights['dw']+= self.alpha * np.sign(layer.weights['w'] + 1e-8)
+KeyboardInterrupt

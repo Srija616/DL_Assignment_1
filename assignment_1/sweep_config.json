@@ -1,0 +1,42 @@
+{
+    "program": "train.py",
+    "name": "fashion_mnist_nn_sweep",
+    "method": "bayes",
+    "metric": {
+        "name": "val_acc",
+        "goal": "maximize"
+    },
+    "parameters": {
+        "epochs": {
+            "values": [5, 10]
+        },
+        "alpha": {
+            "values": [0.0001, 0.001]
+        },
+        "beta1": {
+            "values": [0.9, 0.99]
+        },
+        "num_layers":{
+            "values":[3,4,5]
+        },
+        "hidden_sizes":{
+            "values": [32,64,128]},
+        "batch_size": {
+            "values": [16, 32, 64]},
+        "optimizer":{
+            "values": ["sgd", "momentum", "nesterov", "rmsprop", "adam", "nadam"]
+        },
+        "weight_init": {
+            "values": ["random", "he"]
+        },
+        "activation":{
+            "values": ["sigmoid", "tanh", "ReLU"]
+        },
+        "loss":{
+            "values": ["cross_entropy"]
+        },
+        "learning_rate": {
+            "values": [1e-2, 1e-3, 1e-4, 1e-5]
+        }
+    }
+}

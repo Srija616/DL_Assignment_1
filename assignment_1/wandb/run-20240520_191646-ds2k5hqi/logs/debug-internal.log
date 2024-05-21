@@ -1,0 +1,321 @@
+2024-05-20 19:16:46,508 INFO    StreamThr :2129093 [internal.py:wandb_internal():85] W&B internal server running at pid: 2129093, started at: 2024-05-20 19:16:46.507308
+2024-05-20 19:16:46,510 DEBUG   HandlerThread:2129093 [handler.py:handle_request():158] handle_request: status
+2024-05-20 19:16:46,519 INFO    WriterThread:2129093 [datastore.py:open_for_write():87] open: /nlsasfs/home/ai4bharat/praveens/srija/assignment_1/wandb/run-20240520_191646-ds2k5hqi/run-ds2k5hqi.wandb
+2024-05-20 19:16:46,520 DEBUG   SenderThread:2129093 [sender.py:send():378] send: header
+2024-05-20 19:16:46,520 DEBUG   SenderThread:2129093 [sender.py:send():378] send: run
+2024-05-20 19:16:47,197 INFO    SenderThread:2129093 [dir_watcher.py:__init__():211] watching files in: /nlsasfs/home/ai4bharat/praveens/srija/assignment_1/wandb/run-20240520_191646-ds2k5hqi/files
+2024-05-20 19:16:47,197 INFO    SenderThread:2129093 [sender.py:_start_run_threads():1123] run started: ds2k5hqi with start time 1716212806.508486
+2024-05-20 19:16:47,205 DEBUG   HandlerThread:2129093 [handler.py:handle_request():158] handle_request: check_version
+2024-05-20 19:16:47,206 DEBUG   SenderThread:2129093 [sender.py:send_request():405] send_request: check_version
+2024-05-20 19:16:47,343 DEBUG   HandlerThread:2129093 [handler.py:handle_request():158] handle_request: run_start
+2024-05-20 19:16:47,346 DEBUG   HandlerThread:2129093 [system_info.py:__init__():26] System info init
+2024-05-20 19:16:47,346 DEBUG   HandlerThread:2129093 [system_info.py:__init__():41] System info init done
+2024-05-20 19:16:47,346 INFO    HandlerThread:2129093 [system_monitor.py:start():194] Starting system monitor
+2024-05-20 19:16:47,347 INFO    SystemMonitor:2129093 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-05-20 19:16:47,347 INFO    HandlerThread:2129093 [system_monitor.py:probe():214] Collecting system info
+2024-05-20 19:16:47,347 INFO    SystemMonitor:2129093 [interfaces.py:start():188] Started cpu monitoring
+2024-05-20 19:16:47,347 INFO    SystemMonitor:2129093 [interfaces.py:start():188] Started disk monitoring
+2024-05-20 19:16:47,348 INFO    SystemMonitor:2129093 [interfaces.py:start():188] Started gpu monitoring
+2024-05-20 19:16:47,348 INFO    SystemMonitor:2129093 [interfaces.py:start():188] Started memory monitoring
+2024-05-20 19:16:47,349 INFO    SystemMonitor:2129093 [interfaces.py:start():188] Started network monitoring
+2024-05-20 19:16:47,428 DEBUG   HandlerThread:2129093 [system_info.py:probe():150] Probing system
+2024-05-20 19:16:47,430 DEBUG   HandlerThread:2129093 [gitlib.py:_init_repo():56] git repository is invalid
+2024-05-20 19:16:47,430 DEBUG   HandlerThread:2129093 [system_info.py:probe():198] Probing system done
+2024-05-20 19:16:47,430 DEBUG   HandlerThread:2129093 [system_monitor.py:probe():223] {'os': 'Linux-5.4.0-80-generic-x86_64-with-glibc2.31', 'python': '3.10.14', 'heartbeatAt': '2024-05-20T13:46:47.428510', 'startedAt': '2024-05-20T13:46:46.491797', 'docker': None, 'cuda': None, 'args': ('--activation=sigmoid', '--alpha=0.0001', '--batch_size=16', '--beta1=0.99', '--epochs=10', '--hidden_sizes=128', '--learning_rate=1e-05', '--loss=cross_entropy', '--num_layers=3', '--optimizer=nadam', '--weight_init=he'), 'state': 'running', 'program': '/nlsasfs/home/ai4bharat/praveens/srija/assignment_1/train.py', 'codePathLocal': 'train.py', 'codePath': 'train.py', 'host': 'scn28-mn', 'username': 'praveens', 'executable': '/nlsasfs/home/ai4bharat/praveens/miniconda3/envs/dl_as/bin/python', 'cpu_count': 128, 'cpu_count_logical': 256, 'cpu_freq': {'current': 3170.8066132812496, 'min': 1500.0, 'max': 2250.0}, 'cpu_freq_per_core': [{'current': 3393.497, 'min': 1500.0, 'max': 2250.0}, {'current': 3393.063, 'min': 1500.0, 'max': 2250.0}, {'current': 3393.381, 'min': 1500.0, 'max': 2250.0}, {'current': 3393.189, 'min': 1500.0, 'max': 2250.0}, {'current': 3393.373, 'min': 1500.0, 'max': 2250.0}, {'current': 3393.513, 'min': 1500.0, 'max': 2250.0}, {'current': 3393.496, 'min': 1500.0, 'max': 2250.0}, {'current': 3393.384, 'min': 1500.0, 'max': 2250.0}, {'current': 3393.366, 'min': 1500.0, 'max': 2250.0}, {'current': 3391.012, 'min': 1500.0, 'max': 2250.0}, {'current': 3388.896, 'min': 1500.0, 'max': 2250.0}, {'current': 3404.93, 'min': 1500.0, 'max': 2250.0}, {'current': 3392.057, 'min': 1500.0, 'max': 2250.0}, {'current': 2664.441, 'min': 1500.0, 'max': 2250.0}, {'current': 3387.302, 'min': 1500.0, 'max': 2250.0}, {'current': 3387.321, 'min': 1500.0, 'max': 2250.0}, {'current': 3391.656, 'min': 1500.0, 'max': 2250.0}, {'current': 3391.988, 'min': 1500.0, 'max': 2250.0}, {'current': 3391.507, 'min': 1500.0, 'max': 2250.0}, {'current': 3391.898, 'min': 1500.0, 'max': 2250.0}, {'current': 3389.249, 'min': 1500.0, 'max': 2250.0}, {'current': 3390.373, 'min': 1500.0, 'max': 2250.0}, {'current': 3389.976, 'min': 1500.0, 'max': 2250.0}, {'current': 3390.174, 'min': 1500.0, 'max': 2250.0}, {'current': 3397.747, 'min': 1500.0, 'max': 2250.0}, {'current': 3394.217, 'min': 1500.0, 'max': 2250.0}, {'current': 3391.965, 'min': 1500.0, 'max': 2250.0}, {'current': 3384.932, 'min': 1500.0, 'max': 2250.0}, {'current': 3393.641, 'min': 1500.0, 'max': 2250.0}, {'current': 3386.591, 'min': 1500.0, 'max': 2250.0}, {'current': 3390.695, 'min': 1500.0, 'max': 2250.0}, {'current': 2204.576, 'min': 1500.0, 'max': 2250.0}, {'current': 3386.447, 'min': 1500.0, 'max': 2250.0}, {'current': 3374.873, 'min': 1500.0, 'max': 2250.0}, {'current': 3388.118, 'min': 1500.0, 'max': 2250.0}, {'current': 3399.625, 'min': 1500.0, 'max': 2250.0}, {'current': 3378.867, 'min': 1500.0, 'max': 2250.0}, {'current': 2210.132, 'min': 1500.0, 'max': 2250.0}, {'current': 2199.663, 'min': 1500.0, 'max': 2250.0}, {'current': 3395.317, 'min': 1500.0, 'max': 2250.0}, {'current': 3386.418, 'min': 1500.0, 'max': 2250.0}, {'current': 3372.41, 'min': 1500.0, 'max': 2250.0}, {'current': 3382.321, 'min': 1500.0, 'max': 2250.0}, {'current': 3391.933, 'min': 1500.0, 'max': 2250.0}, {'current': 3397.361, 'min': 1500.0, 'max': 2250.0}, {'current': 3379.448, 'min': 1500.0, 'max': 2250.0}, {'current': 2234.74, 'min': 1500.0, 'max': 2250.0}, {'current': 3382.062, 'min': 1500.0, 'max': 2250.0}, {'current': 3387.551, 'min': 1500.0, 'max': 2250.0}, {'current': 3398.983, 'min': 1500.0, 'max': 2250.0}, {'current': 3387.634, 'min': 1500.0, 'max': 2250.0}, {'current': 3390.021, 'min': 1500.0, 'max': 2250.0}, {'current': 3390.945, 'min': 1500.0, 'max': 2250.0}, {'current': 3379.977, 'min': 1500.0, 'max': 2250.0}, {'current': 3383.223, 'min': 1500.0, 'max': 2250.0}, {'current': 3397.597, 'min': 1500.0, 'max': 2250.0}, {'current': 2200.985, 'min': 1500.0, 'max': 2250.0}, {'current': 3385.067, 'min': 1500.0, 'max': 2250.0}, {'current': 3395.224, 'min': 1500.0, 'max': 2250.0}, {'current': 3394.359, 'min': 1500.0, 'max': 2250.0}, {'current': 2292.674, 'min': 1500.0, 'max': 2250.0}, {'current': 3385.407, 'min': 1500.0, 'max': 2250.0}, {'current': 3388.945, 'min': 1500.0, 'max': 2250.0}, {'current': 3386.639, 'min': 1500.0, 'max': 2250.0}, {'current': 3388.009, 'min': 1500.0, 'max': 2250.0}, {'current': 3385.537, 'min': 1500.0, 'max': 2250.0}, {'current': 2538.34, 'min': 1500.0, 'max': 2250.0}, {'current': 3389.672, 'min': 1500.0, 'max': 2250.0}, {'current': 3392.083, 'min': 1500.0, 'max': 2250.0}, {'current': 3376.645, 'min': 1500.0, 'max': 2250.0}, {'current': 3373.052, 'min': 1500.0, 'max': 2250.0}, {'current': 3381.059, 'min': 1500.0, 'max': 2250.0}, {'current': 3386.685, 'min': 1500.0, 'max': 2250.0}, {'current': 3396.887, 'min': 1500.0, 'max': 2250.0}, {'current': 3408.436, 'min': 1500.0, 'max': 2250.0}, {'current': 3393.235, 'min': 1500.0, 'max': 2250.0}, {'current': 2169.252, 'min': 1500.0, 'max': 2250.0}, {'current': 3398.118, 'min': 1500.0, 'max': 2250.0}, {'current': 3386.639, 'min': 1500.0, 'max': 2250.0}, {'current': 3386.13, 'min': 1500.0, 'max': 2250.0}, {'current': 3384.356, 'min': 1500.0, 'max': 2250.0}, {'current': 3372.709, 'min': 1500.0, 'max': 2250.0}, {'current': 3384.219, 'min': 1500.0, 'max': 2250.0}, {'current': 3392.086, 'min': 1500.0, 'max': 2250.0}, {'current': 3303.381, 'min': 1500.0, 'max': 2250.0}, {'current': 3291.817, 'min': 1500.0, 'max': 2250.0}, {'current': 3385.818, 'min': 1500.0, 'max': 2250.0}, {'current': 3256.653, 'min': 1500.0, 'max': 2250.0}, {'current': 3384.525, 'min': 1500.0, 'max': 2250.0}, {'current': 3396.558, 'min': 1500.0, 'max': 2250.0}, {'current': 2769.171, 'min': 1500.0, 'max': 2250.0}, {'current': 3397.831, 'min': 1500.0, 'max': 2250.0}, {'current': 3390.395, 'min': 1500.0, 'max': 2250.0}, {'current': 3381.627, 'min': 1500.0, 'max': 2250.0}, {'current': 3390.446, 'min': 1500.0, 'max': 2250.0}, {'current': 3389.614, 'min': 1500.0, 'max': 2250.0}, {'current': 3387.466, 'min': 1500.0, 'max': 2250.0}, {'current': 3385.085, 'min': 1500.0, 'max': 2250.0}, {'current': 3405.791, 'min': 1500.0, 'max': 2250.0}, {'current': 3385.057, 'min': 1500.0, 'max': 2250.0}, {'current': 3403.077, 'min': 1500.0, 'max': 2250.0}, {'current': 3389.994, 'min': 1500.0, 'max': 2250.0}, {'current': 3382.321, 'min': 1500.0, 'max': 2250.0}, {'current': 3398.924, 'min': 1500.0, 'max': 2250.0}, {'current': 3388.837, 'min': 1500.0, 'max': 2250.0}, {'current': 3394.879, 'min': 1500.0, 'max': 2250.0}, {'current': 3389.261, 'min': 1500.0, 'max': 2250.0}, {'current': 3395.37, 'min': 1500.0, 'max': 2250.0}, {'current': 1798.706, 'min': 1500.0, 'max': 2250.0}, {'current': 1800.015, 'min': 1500.0, 'max': 2250.0}, {'current': 1795.951, 'min': 1500.0, 'max': 2250.0}, {'current': 1789.656, 'min': 1500.0, 'max': 2250.0}, {'current': 2395.841, 'min': 1500.0, 'max': 2250.0}, {'current': 2451.142, 'min': 1500.0, 'max': 2250.0}, {'current': 2477.349, 'min': 1500.0, 'max': 2250.0}, {'current': 2464.31, 'min': 1500.0, 'max': 2250.0}, {'current': 2341.416, 'min': 1500.0, 'max': 2250.0}, {'current': 3381.735, 'min': 1500.0, 'max': 2250.0}, {'current': 1940.525, 'min': 1500.0, 'max': 2250.0}, {'current': 2402.257, 'min': 1500.0, 'max': 2250.0}, {'current': 2557.134, 'min': 1500.0, 'max': 2250.0}, {'current': 2520.35, 'min': 1500.0, 'max': 2250.0}, {'current': 2465.179, 'min': 1500.0, 'max': 2250.0}, {'current': 2365.666, 'min': 1500.0, 'max': 2250.0}, {'current': 2518.427, 'min': 1500.0, 'max': 2250.0}, {'current': 2498.028, 'min': 1500.0, 'max': 2250.0}, {'current': 1895.892, 'min': 1500.0, 'max': 2250.0}, {'current': 1908.602, 'min': 1500.0, 'max': 2250.0}, {'current': 3393.499, 'min': 1500.0, 'max': 2250.0}, {'current': 3393.089, 'min': 1500.0, 'max': 2250.0}, {'current': 3393.293, 'min': 1500.0, 'max': 2250.0}, {'current': 3393.213, 'min': 1500.0, 'max': 2250.0}, {'current': 3391.868, 'min': 1500.0, 'max': 2250.0}, {'current': 3392.099, 'min': 1500.0, 'max': 2250.0}, {'current': 3391.912, 'min': 1500.0, 'max': 2250.0}, {'current': 3391.887, 'min': 1500.0, 'max': 2250.0}, {'current': 3402.259, 'min': 1500.0, 'max': 2250.0}, {'current': 3400.769, 'min': 1500.0, 'max': 2250.0}, {'current': 3385.57, 'min': 1500.0, 'max': 2250.0}, {'current': 3388.374, 'min': 1500.0, 'max': 2250.0}, {'current': 2726.016, 'min': 1500.0, 'max': 2250.0}, {'current': 3392.492, 'min': 1500.0, 'max': 2250.0}, {'current': 3373.698, 'min': 1500.0, 'max': 2250.0}, {'current': 3381.161, 'min': 1500.0, 'max': 2250.0}, {'current': 3388.934, 'min': 1500.0, 'max': 2250.0}, {'current': 3389.174, 'min': 1500.0, 'max': 2250.0}, {'current': 3388.726, 'min': 1500.0, 'max': 2250.0}, {'current': 3388.924, 'min': 1500.0, 'max': 2250.0}, {'current': 3389.508, 'min': 1500.0, 'max': 2250.0}, {'current': 3390.432, 'min': 1500.0, 'max': 2250.0}, {'current': 3390.068, 'min': 1500.0, 'max': 2250.0}, {'current': 3390.394, 'min': 1500.0, 'max': 2250.0}, {'current': 2479.141, 'min': 1500.0, 'max': 2250.0}, {'current': 2262.44, 'min': 1500.0, 'max': 2250.0}, {'current': 1738.053, 'min': 1500.0, 'max': 2250.0}, {'current': 2440.812, 'min': 1500.0, 'max': 2250.0}, {'current': 1793.966, 'min': 1500.0, 'max': 2250.0}, {'current': 3355.035, 'min': 1500.0, 'max': 2250.0}, {'current': 1760.511, 'min': 1500.0, 'max': 2250.0}, {'current': 1791.181, 'min': 1500.0, 'max': 2250.0}, {'current': 1744.008, 'min': 1500.0, 'max': 2250.0}, {'current': 1738.982, 'min': 1500.0, 'max': 2250.0}, {'current': 2501.681, 'min': 1500.0, 'max': 2250.0}, {'current': 2482.865, 'min': 1500.0, 'max': 2250.0}, {'current': 1795.764, 'min': 1500.0, 'max': 2250.0}, {'current': 1790.298, 'min': 1500.0, 'max': 2250.0}, {'current': 1797.849, 'min': 1500.0, 'max': 2250.0}, {'current': 1795.203, 'min': 1500.0, 'max': 2250.0}, {'current': 1698.361, 'min': 1500.0, 'max': 2250.0}, {'current': 2397.854, 'min': 1500.0, 'max': 2250.0}, {'current': 1692.59, 'min': 1500.0, 'max': 2250.0}, {'current': 3389.749, 'min': 1500.0, 'max': 2250.0}, {'current': 1747.754, 'min': 1500.0, 'max': 2250.0}, {'current': 1748.604, 'min': 1500.0, 'max': 2250.0}, {'current': 2431.597, 'min': 1500.0, 'max': 2250.0}, {'current': 1741.019, 'min': 1500.0, 'max': 2250.0}, {'current': 2426.623, 'min': 1500.0, 'max': 2250.0}, {'current': 1745.914, 'min': 1500.0, 'max': 2250.0}, {'current': 1742.402, 'min': 1500.0, 'max': 2250.0}, {'current': 1746.913, 'min': 1500.0, 'max': 2250.0}, {'current': 3390.242, 'min': 1500.0, 'max': 2250.0}, {'current': 3392.38, 'min': 1500.0, 'max': 2250.0}, {'current': 1696.534, 'min': 1500.0, 'max': 2250.0}, {'current': 3269.543, 'min': 1500.0, 'max': 2250.0}, {'current': 2440.235, 'min': 1500.0, 'max': 2250.0}, {'current': 2364.072, 'min': 1500.0, 'max': 2250.0}, {'current': 2411.824, 'min': 1500.0, 'max': 2250.0}, {'current': 3389.475, 'min': 1500.0, 'max': 2250.0}, {'current': 2470.391, 'min': 1500.0, 'max': 2250.0}, {'current': 1694.201, 'min': 1500.0, 'max': 2250.0}, {'current': 3394.344, 'min': 1500.0, 'max': 2250.0}, {'current': 2411.394, 'min': 1500.0, 'max': 2250.0}, {'current': 2404.368, 'min': 1500.0, 'max': 2250.0}, {'current': 3249.722, 'min': 1500.0, 'max': 2250.0}, {'current': 3377.87, 'min': 1500.0, 'max': 2250.0}, {'current': 3393.505, 'min': 1500.0, 'max': 2250.0}, {'current': 2343.285, 'min': 1500.0, 'max': 2250.0}, {'current': 2668.807, 'min': 1500.0, 'max': 2250.0}, {'current': 3387.502, 'min': 1500.0, 'max': 2250.0}, {'current': 3026.986, 'min': 1500.0, 'max': 2250.0}, {'current': 3379.859, 'min': 1500.0, 'max': 2250.0}, {'current': 2357.757, 'min': 1500.0, 'max': 2250.0}, {'current': 3386.57, 'min': 1500.0, 'max': 2250.0}, {'current': 3390.057, 'min': 1500.0, 'max': 2250.0}, {'current': 3396.531, 'min': 1500.0, 'max': 2250.0}, {'current': 3384.363, 'min': 1500.0, 'max': 2250.0}, {'current': 3384.932, 'min': 1500.0, 'max': 2250.0}, {'current': 3383.605, 'min': 1500.0, 'max': 2250.0}, {'current': 3384.136, 'min': 1500.0, 'max': 2250.0}, {'current': 2434.538, 'min': 1500.0, 'max': 2250.0}, {'current': 2366.01, 'min': 1500.0, 'max': 2250.0}, {'current': 3393.531, 'min': 1500.0, 'max': 2250.0}, {'current': 3394.984, 'min': 1500.0, 'max': 2250.0}, {'current': 3014.125, 'min': 1500.0, 'max': 2250.0}, {'current': 3384.616, 'min': 1500.0, 'max': 2250.0}, {'current': 3401.9, 'min': 1500.0, 'max': 2250.0}, {'current': 3389.035, 'min': 1500.0, 'max': 2250.0}, {'current': 2554.553, 'min': 1500.0, 'max': 2250.0}, {'current': 2509.906, 'min': 1500.0, 'max': 2250.0}, {'current': 3384.253, 'min': 1500.0, 'max': 2250.0}, {'current': 3387.776, 'min': 1500.0, 'max': 2250.0}, {'current': 1696.233, 'min': 1500.0, 'max': 2250.0}, {'current': 3375.809, 'min': 1500.0, 'max': 2250.0}, {'current': 3376.357, 'min': 1500.0, 'max': 2250.0}, {'current': 3391.487, 'min': 1500.0, 'max': 2250.0}, {'current': 3384.968, 'min': 1500.0, 'max': 2250.0}, {'current': 3389.634, 'min': 1500.0, 'max': 2250.0}, {'current': 3373.272, 'min': 1500.0, 'max': 2250.0}, {'current': 2534.397, 'min': 1500.0, 'max': 2250.0}, {'current': 2453.394, 'min': 1500.0, 'max': 2250.0}, {'current': 2500.205, 'min': 1500.0, 'max': 2250.0}, {'current': 2509.646, 'min': 1500.0, 'max': 2250.0}, {'current': 2501.182, 'min': 1500.0, 'max': 2250.0}, {'current': 2438.822, 'min': 1500.0, 'max': 2250.0}, {'current': 3385.122, 'min': 1500.0, 'max': 2250.0}, {'current': 2451.657, 'min': 1500.0, 'max': 2250.0}, {'current': 2459.458, 'min': 1500.0, 'max': 2250.0}, {'current': 1738.444, 'min': 1500.0, 'max': 2250.0}, {'current': 2492.923, 'min': 1500.0, 'max': 2250.0}, {'current': 2504.968, 'min': 1500.0, 'max': 2250.0}, {'current': 2457.715, 'min': 1500.0, 'max': 2250.0}, {'current': 1932.878, 'min': 1500.0, 'max': 2250.0}, {'current': 2902.743, 'min': 1500.0, 'max': 2250.0}, {'current': 2839.75, 'min': 1500.0, 'max': 2250.0}, {'current': 1779.439, 'min': 1500.0, 'max': 2250.0}, {'current': 3389.387, 'min': 1500.0, 'max': 2250.0}, {'current': 2325.082, 'min': 1500.0, 'max': 2250.0}, {'current': 2337.709, 'min': 1500.0, 'max': 2250.0}, {'current': 2572.679, 'min': 1500.0, 'max': 2250.0}, {'current': 2725.077, 'min': 1500.0, 'max': 2250.0}, {'current': 2502.107, 'min': 1500.0, 'max': 2250.0}, {'current': 2814.142, 'min': 1500.0, 'max': 2250.0}, {'current': 2534.684, 'min': 1500.0, 'max': 2250.0}, {'current': 2513.77, 'min': 1500.0, 'max': 2250.0}, {'current': 2502.784, 'min': 1500.0, 'max': 2250.0}, {'current': 2522.185, 'min': 1500.0, 'max': 2250.0}], 'disk': {'/': {'total': 1757.8287315368652, 'used': 422.26686096191406}}, 'memory': {'total': 1007.6966590881348}}
+2024-05-20 19:16:47,430 INFO    HandlerThread:2129093 [system_monitor.py:probe():224] Finished collecting system info
+2024-05-20 19:16:47,430 INFO    HandlerThread:2129093 [system_monitor.py:probe():227] Publishing system info
+2024-05-20 19:16:47,430 DEBUG   HandlerThread:2129093 [system_info.py:_save_conda():207] Saving list of conda packages installed into the current environment
+2024-05-20 19:16:48,200 INFO    Thread-12 :2129093 [dir_watcher.py:_on_file_created():271] file/dir created: /nlsasfs/home/ai4bharat/praveens/srija/assignment_1/wandb/run-20240520_191646-ds2k5hqi/files/conda-environment.yaml
+2024-05-20 19:16:54,258 INFO    Thread-12 :2129093 [dir_watcher.py:_on_file_modified():288] file/dir modified: /nlsasfs/home/ai4bharat/praveens/srija/assignment_1/wandb/run-20240520_191646-ds2k5hqi/files/conda-environment.yaml
+2024-05-20 19:16:54,265 DEBUG   HandlerThread:2129093 [system_info.py:_save_conda():222] Saving conda packages done
+2024-05-20 19:16:54,269 INFO    HandlerThread:2129093 [system_monitor.py:probe():229] Finished publishing system info
+2024-05-20 19:16:54,288 DEBUG   HandlerThread:2129093 [handler.py:handle_request():158] handle_request: status_report
+2024-05-20 19:16:54,288 DEBUG   HandlerThread:2129093 [handler.py:handle_request():158] handle_request: keepalive
+2024-05-20 19:16:54,288 DEBUG   SenderThread:2129093 [sender.py:send():378] send: files
+2024-05-20 19:16:54,288 INFO    SenderThread:2129093 [sender.py:_save_file():1389] saving file wandb-metadata.json with policy now
+2024-05-20 19:16:54,379 DEBUG   HandlerThread:2129093 [handler.py:handle_request():158] handle_request: python_packages
+2024-05-20 19:16:54,379 DEBUG   SenderThread:2129093 [sender.py:send_request():405] send_request: python_packages
+2024-05-20 19:16:54,380 DEBUG   HandlerThread:2129093 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-20 19:16:54,381 DEBUG   SenderThread:2129093 [sender.py:send_request():405] send_request: stop_status
+2024-05-20 19:16:54,743 DEBUG   SenderThread:2129093 [sender.py:send():378] send: telemetry
+2024-05-20 19:16:55,260 INFO    Thread-12 :2129093 [dir_watcher.py:_on_file_created():271] file/dir created: /nlsasfs/home/ai4bharat/praveens/srija/assignment_1/wandb/run-20240520_191646-ds2k5hqi/files/requirements.txt
+2024-05-20 19:16:55,260 INFO    Thread-12 :2129093 [dir_watcher.py:_on_file_created():271] file/dir created: /nlsasfs/home/ai4bharat/praveens/srija/assignment_1/wandb/run-20240520_191646-ds2k5hqi/files/wandb-metadata.json
+2024-05-20 19:16:55,579 INFO    wandb-upload_0:2129093 [upload_job.py:push():130] Uploaded file /tmp/tmps6d0jwgkwandb/zcuo3l2j-wandb-metadata.json
+2024-05-20 19:16:55,766 DEBUG   SenderThread:2129093 [sender.py:send():378] send: files
+2024-05-20 19:16:55,766 INFO    SenderThread:2129093 [sender.py:_save_file():1389] saving file media/images/Class Images_0_4696b385407ad6b0987f.png with policy now
+2024-05-20 19:16:55,766 DEBUG   HandlerThread:2129093 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-20 19:16:55,767 DEBUG   SenderThread:2129093 [sender.py:send():378] send: history
+2024-05-20 19:16:55,767 DEBUG   SenderThread:2129093 [sender.py:send_request():405] send_request: summary_record
+2024-05-20 19:16:55,770 INFO    SenderThread:2129093 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-20 19:16:56,263 INFO    Thread-12 :2129093 [dir_watcher.py:_on_file_created():271] file/dir created: /nlsasfs/home/ai4bharat/praveens/srija/assignment_1/wandb/run-20240520_191646-ds2k5hqi/files/wandb-summary.json
+2024-05-20 19:16:56,263 INFO    Thread-12 :2129093 [dir_watcher.py:_on_file_created():271] file/dir created: /nlsasfs/home/ai4bharat/praveens/srija/assignment_1/wandb/run-20240520_191646-ds2k5hqi/files/media/images/Class Images_0_4696b385407ad6b0987f.png
+2024-05-20 19:16:56,263 INFO    Thread-12 :2129093 [dir_watcher.py:_on_file_created():271] file/dir created: /nlsasfs/home/ai4bharat/praveens/srija/assignment_1/wandb/run-20240520_191646-ds2k5hqi/files/media
+2024-05-20 19:16:56,264 INFO    Thread-12 :2129093 [dir_watcher.py:_on_file_created():271] file/dir created: /nlsasfs/home/ai4bharat/praveens/srija/assignment_1/wandb/run-20240520_191646-ds2k5hqi/files/media/images
+2024-05-20 19:16:56,700 INFO    wandb-upload_0:2129093 [upload_job.py:push():130] Uploaded file /tmp/tmps6d0jwgkwandb/k86foj5b-media/images/Class Images_0_4696b385407ad6b0987f.png
+2024-05-20 19:16:57,755 INFO    wandb-upload_0:2129093 [upload_job.py:push():130] Uploaded file /tmp/tmps6d0jwgkwandb/a4ryppej-media/images/Class Images_0_4696b385407ad6b0987f.png
+2024-05-20 19:16:57,771 DEBUG   HandlerThread:2129093 [handler.py:handle_request():158] handle_request: status_report
+2024-05-20 19:17:02,771 DEBUG   HandlerThread:2129093 [handler.py:handle_request():158] handle_request: status_report
+2024-05-20 19:17:07,772 DEBUG   HandlerThread:2129093 [handler.py:handle_request():158] handle_request: status_report
+2024-05-20 19:17:09,380 DEBUG   HandlerThread:2129093 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-20 19:17:09,381 DEBUG   SenderThread:2129093 [sender.py:send_request():405] send_request: stop_status
+2024-05-20 19:17:13,725 DEBUG   HandlerThread:2129093 [handler.py:handle_request():158] handle_request: status_report
+2024-05-20 19:17:17,770 DEBUG   HandlerThread:2129093 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-20 19:17:17,771 DEBUG   SenderThread:2129093 [sender.py:send():378] send: telemetry
+2024-05-20 19:17:18,373 INFO    Thread-12 :2129093 [dir_watcher.py:_on_file_created():271] file/dir created: /nlsasfs/home/ai4bharat/praveens/srija/assignment_1/wandb/run-20240520_191646-ds2k5hqi/files/output.log
+2024-05-20 19:17:18,776 DEBUG   HandlerThread:2129093 [handler.py:handle_request():158] handle_request: status_report
+2024-05-20 19:17:19,375 INFO    Thread-12 :2129093 [dir_watcher.py:_on_file_modified():288] file/dir modified: /nlsasfs/home/ai4bharat/praveens/srija/assignment_1/wandb/run-20240520_191646-ds2k5hqi/files/config.yaml
+2024-05-20 19:17:20,376 INFO    Thread-12 :2129093 [dir_watcher.py:_on_file_modified():288] file/dir modified: /nlsasfs/home/ai4bharat/praveens/srija/assignment_1/wandb/run-20240520_191646-ds2k5hqi/files/output.log
+2024-05-20 19:17:24,094 DEBUG   HandlerThread:2129093 [handler.py:handle_request():158] handle_request: status_report
+2024-05-20 19:17:24,380 DEBUG   HandlerThread:2129093 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-20 19:17:24,381 DEBUG   SenderThread:2129093 [sender.py:send_request():405] send_request: stop_status
+2024-05-20 19:17:29,706 DEBUG   HandlerThread:2129093 [handler.py:handle_request():158] handle_request: status_report
+2024-05-20 19:17:34,707 DEBUG   HandlerThread:2129093 [handler.py:handle_request():158] handle_request: status_report
+2024-05-20 19:17:36,595 DEBUG   HandlerThread:2129093 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-20 19:17:36,596 DEBUG   SenderThread:2129093 [sender.py:send():378] send: history
+2024-05-20 19:17:36,597 DEBUG   SenderThread:2129093 [sender.py:send_request():405] send_request: summary_record
+2024-05-20 19:17:36,599 INFO    SenderThread:2129093 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-20 19:17:37,402 INFO    Thread-12 :2129093 [dir_watcher.py:_on_file_modified():288] file/dir modified: /nlsasfs/home/ai4bharat/praveens/srija/assignment_1/wandb/run-20240520_191646-ds2k5hqi/files/wandb-summary.json
+2024-05-20 19:17:38,403 INFO    Thread-12 :2129093 [dir_watcher.py:_on_file_modified():288] file/dir modified: /nlsasfs/home/ai4bharat/praveens/srija/assignment_1/wandb/run-20240520_191646-ds2k5hqi/files/output.log
+2024-05-20 19:17:39,381 DEBUG   HandlerThread:2129093 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-20 19:17:39,381 DEBUG   SenderThread:2129093 [sender.py:send_request():405] send_request: stop_status
+2024-05-20 19:17:39,741 DEBUG   HandlerThread:2129093 [handler.py:handle_request():158] handle_request: status_report
+2024-05-20 19:17:44,741 DEBUG   HandlerThread:2129093 [handler.py:handle_request():158] handle_request: status_report
+2024-05-20 19:17:47,349 DEBUG   SystemMonitor:2129093 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-05-20 19:17:47,352 DEBUG   SenderThread:2129093 [sender.py:send():378] send: stats
+2024-05-20 19:17:50,354 DEBUG   HandlerThread:2129093 [handler.py:handle_request():158] handle_request: status_report
+2024-05-20 19:17:54,381 DEBUG   HandlerThread:2129093 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-20 19:17:54,381 DEBUG   SenderThread:2129093 [sender.py:send_request():405] send_request: stop_status
+2024-05-20 19:17:55,532 DEBUG   HandlerThread:2129093 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-20 19:17:55,532 DEBUG   HandlerThread:2129093 [handler.py:handle_request():158] handle_request: status_report
+2024-05-20 19:17:55,532 DEBUG   SenderThread:2129093 [sender.py:send():378] send: history
+2024-05-20 19:17:55,533 DEBUG   SenderThread:2129093 [sender.py:send_request():405] send_request: summary_record
+2024-05-20 19:17:55,535 INFO    SenderThread:2129093 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-20 19:17:55,605 INFO    Thread-12 :2129093 [dir_watcher.py:_on_file_modified():288] file/dir modified: /nlsasfs/home/ai4bharat/praveens/srija/assignment_1/wandb/run-20240520_191646-ds2k5hqi/files/wandb-summary.json
+2024-05-20 19:17:58,608 INFO    Thread-12 :2129093 [dir_watcher.py:_on_file_modified():288] file/dir modified: /nlsasfs/home/ai4bharat/praveens/srija/assignment_1/wandb/run-20240520_191646-ds2k5hqi/files/output.log
+2024-05-20 19:18:00,536 DEBUG   HandlerThread:2129093 [handler.py:handle_request():158] handle_request: status_report
+2024-05-20 19:18:05,537 DEBUG   HandlerThread:2129093 [handler.py:handle_request():158] handle_request: status_report
+2024-05-20 19:18:09,383 DEBUG   HandlerThread:2129093 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-20 19:18:09,383 DEBUG   SenderThread:2129093 [sender.py:send_request():405] send_request: stop_status
+2024-05-20 19:18:10,744 DEBUG   HandlerThread:2129093 [handler.py:handle_request():158] handle_request: status_report
+2024-05-20 19:18:12,409 DEBUG   HandlerThread:2129093 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-20 19:18:12,410 DEBUG   SenderThread:2129093 [sender.py:send():378] send: history
+2024-05-20 19:18:12,410 DEBUG   SenderThread:2129093 [sender.py:send_request():405] send_request: summary_record
+2024-05-20 19:18:12,412 INFO    SenderThread:2129093 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-20 19:18:12,625 INFO    Thread-12 :2129093 [dir_watcher.py:_on_file_modified():288] file/dir modified: /nlsasfs/home/ai4bharat/praveens/srija/assignment_1/wandb/run-20240520_191646-ds2k5hqi/files/wandb-summary.json
+2024-05-20 19:18:14,627 INFO    Thread-12 :2129093 [dir_watcher.py:_on_file_modified():288] file/dir modified: /nlsasfs/home/ai4bharat/praveens/srija/assignment_1/wandb/run-20240520_191646-ds2k5hqi/files/output.log
+2024-05-20 19:18:16,412 DEBUG   HandlerThread:2129093 [handler.py:handle_request():158] handle_request: status_report
+2024-05-20 19:18:17,355 DEBUG   SenderThread:2129093 [sender.py:send():378] send: stats
+2024-05-20 19:18:22,358 DEBUG   HandlerThread:2129093 [handler.py:handle_request():158] handle_request: status_report
+2024-05-20 19:18:24,381 DEBUG   HandlerThread:2129093 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-20 19:18:24,382 DEBUG   SenderThread:2129093 [sender.py:send_request():405] send_request: stop_status
+2024-05-20 19:18:27,805 DEBUG   HandlerThread:2129093 [handler.py:handle_request():158] handle_request: status_report
+2024-05-20 19:18:28,743 DEBUG   HandlerThread:2129093 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-20 19:18:28,744 DEBUG   SenderThread:2129093 [sender.py:send():378] send: history
+2024-05-20 19:18:28,744 DEBUG   SenderThread:2129093 [sender.py:send_request():405] send_request: summary_record
+2024-05-20 19:18:28,746 INFO    SenderThread:2129093 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-20 19:18:29,083 INFO    Thread-12 :2129093 [dir_watcher.py:_on_file_modified():288] file/dir modified: /nlsasfs/home/ai4bharat/praveens/srija/assignment_1/wandb/run-20240520_191646-ds2k5hqi/files/wandb-summary.json
+2024-05-20 19:18:30,085 INFO    Thread-12 :2129093 [dir_watcher.py:_on_file_modified():288] file/dir modified: /nlsasfs/home/ai4bharat/praveens/srija/assignment_1/wandb/run-20240520_191646-ds2k5hqi/files/output.log
+2024-05-20 19:18:33,746 DEBUG   HandlerThread:2129093 [handler.py:handle_request():158] handle_request: status_report
+2024-05-20 19:18:38,747 DEBUG   HandlerThread:2129093 [handler.py:handle_request():158] handle_request: status_report
+2024-05-20 19:18:39,381 DEBUG   HandlerThread:2129093 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-20 19:18:39,382 DEBUG   SenderThread:2129093 [sender.py:send_request():405] send_request: stop_status
+2024-05-20 19:18:43,756 DEBUG   HandlerThread:2129093 [handler.py:handle_request():158] handle_request: status_report
+2024-05-20 19:18:47,358 DEBUG   SenderThread:2129093 [sender.py:send():378] send: stats
+2024-05-20 19:18:47,809 DEBUG   HandlerThread:2129093 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-20 19:18:47,809 DEBUG   SenderThread:2129093 [sender.py:send():378] send: history
+2024-05-20 19:18:47,809 DEBUG   SenderThread:2129093 [sender.py:send_request():405] send_request: summary_record
+2024-05-20 19:18:47,811 INFO    SenderThread:2129093 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-20 19:18:48,105 INFO    Thread-12 :2129093 [dir_watcher.py:_on_file_modified():288] file/dir modified: /nlsasfs/home/ai4bharat/praveens/srija/assignment_1/wandb/run-20240520_191646-ds2k5hqi/files/wandb-summary.json
+2024-05-20 19:18:48,812 DEBUG   HandlerThread:2129093 [handler.py:handle_request():158] handle_request: status_report
+2024-05-20 19:18:50,108 INFO    Thread-12 :2129093 [dir_watcher.py:_on_file_modified():288] file/dir modified: /nlsasfs/home/ai4bharat/praveens/srija/assignment_1/wandb/run-20240520_191646-ds2k5hqi/files/output.log
+2024-05-20 19:18:53,812 DEBUG   HandlerThread:2129093 [handler.py:handle_request():158] handle_request: status_report
+2024-05-20 19:18:54,383 DEBUG   HandlerThread:2129093 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-20 19:18:54,383 DEBUG   SenderThread:2129093 [sender.py:send_request():405] send_request: stop_status
+2024-05-20 19:18:59,810 DEBUG   HandlerThread:2129093 [handler.py:handle_request():158] handle_request: status_report
+2024-05-20 19:19:04,811 DEBUG   HandlerThread:2129093 [handler.py:handle_request():158] handle_request: status_report
+2024-05-20 19:19:07,112 DEBUG   HandlerThread:2129093 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-20 19:19:07,113 DEBUG   SenderThread:2129093 [sender.py:send():378] send: history
+2024-05-20 19:19:07,113 DEBUG   SenderThread:2129093 [sender.py:send_request():405] send_request: summary_record
+2024-05-20 19:19:07,128 INFO    SenderThread:2129093 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-20 19:19:07,129 INFO    Thread-12 :2129093 [dir_watcher.py:_on_file_modified():288] file/dir modified: /nlsasfs/home/ai4bharat/praveens/srija/assignment_1/wandb/run-20240520_191646-ds2k5hqi/files/wandb-summary.json
+2024-05-20 19:19:08,130 INFO    Thread-12 :2129093 [dir_watcher.py:_on_file_modified():288] file/dir modified: /nlsasfs/home/ai4bharat/praveens/srija/assignment_1/wandb/run-20240520_191646-ds2k5hqi/files/output.log
+2024-05-20 19:19:09,383 DEBUG   HandlerThread:2129093 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-20 19:19:09,384 DEBUG   SenderThread:2129093 [sender.py:send_request():405] send_request: stop_status
+2024-05-20 19:19:10,740 DEBUG   HandlerThread:2129093 [handler.py:handle_request():158] handle_request: status_report
+2024-05-20 19:19:15,740 DEBUG   HandlerThread:2129093 [handler.py:handle_request():158] handle_request: status_report
+2024-05-20 19:19:17,366 DEBUG   SenderThread:2129093 [sender.py:send():378] send: stats
+2024-05-20 19:19:21,368 DEBUG   HandlerThread:2129093 [handler.py:handle_request():158] handle_request: status_report
+2024-05-20 19:19:24,382 DEBUG   HandlerThread:2129093 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-20 19:19:24,382 DEBUG   SenderThread:2129093 [sender.py:send_request():405] send_request: stop_status
+2024-05-20 19:19:26,177 DEBUG   HandlerThread:2129093 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-20 19:19:26,178 DEBUG   SenderThread:2129093 [sender.py:send():378] send: history
+2024-05-20 19:19:26,178 DEBUG   SenderThread:2129093 [sender.py:send_request():405] send_request: summary_record
+2024-05-20 19:19:26,179 INFO    SenderThread:2129093 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-20 19:19:27,045 INFO    Thread-12 :2129093 [dir_watcher.py:_on_file_modified():288] file/dir modified: /nlsasfs/home/ai4bharat/praveens/srija/assignment_1/wandb/run-20240520_191646-ds2k5hqi/files/wandb-summary.json
+2024-05-20 19:19:27,180 DEBUG   HandlerThread:2129093 [handler.py:handle_request():158] handle_request: status_report
+2024-05-20 19:19:28,046 INFO    Thread-12 :2129093 [dir_watcher.py:_on_file_modified():288] file/dir modified: /nlsasfs/home/ai4bharat/praveens/srija/assignment_1/wandb/run-20240520_191646-ds2k5hqi/files/output.log
+2024-05-20 19:19:32,180 DEBUG   HandlerThread:2129093 [handler.py:handle_request():158] handle_request: status_report
+2024-05-20 19:19:37,181 DEBUG   HandlerThread:2129093 [handler.py:handle_request():158] handle_request: status_report
+2024-05-20 19:19:39,383 DEBUG   HandlerThread:2129093 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-20 19:19:39,383 DEBUG   SenderThread:2129093 [sender.py:send_request():405] send_request: stop_status
+2024-05-20 19:19:42,730 DEBUG   HandlerThread:2129093 [handler.py:handle_request():158] handle_request: status_report
+2024-05-20 19:19:45,307 DEBUG   HandlerThread:2129093 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-20 19:19:45,307 DEBUG   SenderThread:2129093 [sender.py:send():378] send: history
+2024-05-20 19:19:45,308 DEBUG   SenderThread:2129093 [sender.py:send_request():405] send_request: summary_record
+2024-05-20 19:19:45,317 INFO    SenderThread:2129093 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-20 19:19:46,067 INFO    Thread-12 :2129093 [dir_watcher.py:_on_file_modified():288] file/dir modified: /nlsasfs/home/ai4bharat/praveens/srija/assignment_1/wandb/run-20240520_191646-ds2k5hqi/files/wandb-summary.json
+2024-05-20 19:19:46,067 INFO    Thread-12 :2129093 [dir_watcher.py:_on_file_modified():288] file/dir modified: /nlsasfs/home/ai4bharat/praveens/srija/assignment_1/wandb/run-20240520_191646-ds2k5hqi/files/output.log
+2024-05-20 19:19:47,363 DEBUG   SenderThread:2129093 [sender.py:send():378] send: stats
+2024-05-20 19:19:48,365 DEBUG   HandlerThread:2129093 [handler.py:handle_request():158] handle_request: status_report
+2024-05-20 19:19:53,365 DEBUG   HandlerThread:2129093 [handler.py:handle_request():158] handle_request: status_report
+2024-05-20 19:19:54,383 DEBUG   HandlerThread:2129093 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-20 19:19:54,383 DEBUG   SenderThread:2129093 [sender.py:send_request():405] send_request: stop_status
+2024-05-20 19:19:58,794 DEBUG   HandlerThread:2129093 [handler.py:handle_request():158] handle_request: status_report
+2024-05-20 19:20:03,794 DEBUG   HandlerThread:2129093 [handler.py:handle_request():158] handle_request: status_report
+2024-05-20 19:20:04,590 DEBUG   HandlerThread:2129093 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-20 19:20:04,591 DEBUG   SenderThread:2129093 [sender.py:send():378] send: history
+2024-05-20 19:20:04,591 DEBUG   SenderThread:2129093 [sender.py:send_request():405] send_request: summary_record
+2024-05-20 19:20:04,592 INFO    SenderThread:2129093 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-20 19:20:04,696 DEBUG   SenderThread:2129093 [sender.py:send():378] send: exit
+2024-05-20 19:20:04,696 INFO    SenderThread:2129093 [sender.py:send_exit():585] handling exit code: 0
+2024-05-20 19:20:04,696 INFO    SenderThread:2129093 [sender.py:send_exit():587] handling runtime: 197
+2024-05-20 19:20:04,770 INFO    SenderThread:2129093 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-20 19:20:04,774 INFO    SenderThread:2129093 [sender.py:send_exit():593] send defer
+2024-05-20 19:20:04,775 DEBUG   HandlerThread:2129093 [handler.py:handle_request():158] handle_request: defer
+2024-05-20 19:20:04,775 INFO    HandlerThread:2129093 [handler.py:handle_request_defer():184] handle defer: 0
+2024-05-20 19:20:04,775 DEBUG   SenderThread:2129093 [sender.py:send_request():405] send_request: defer
+2024-05-20 19:20:04,775 INFO    SenderThread:2129093 [sender.py:send_request_defer():609] handle sender defer: 0
+2024-05-20 19:20:04,775 INFO    SenderThread:2129093 [sender.py:transition_state():613] send defer: 1
+2024-05-20 19:20:04,775 DEBUG   HandlerThread:2129093 [handler.py:handle_request():158] handle_request: defer
+2024-05-20 19:20:04,775 INFO    HandlerThread:2129093 [handler.py:handle_request_defer():184] handle defer: 1
+2024-05-20 19:20:04,775 DEBUG   SenderThread:2129093 [sender.py:send_request():405] send_request: defer
+2024-05-20 19:20:04,775 INFO    SenderThread:2129093 [sender.py:send_request_defer():609] handle sender defer: 1
+2024-05-20 19:20:04,775 INFO    SenderThread:2129093 [sender.py:transition_state():613] send defer: 2
+2024-05-20 19:20:04,775 DEBUG   HandlerThread:2129093 [handler.py:handle_request():158] handle_request: defer
+2024-05-20 19:20:04,775 INFO    HandlerThread:2129093 [handler.py:handle_request_defer():184] handle defer: 2
+2024-05-20 19:20:04,776 INFO    HandlerThread:2129093 [system_monitor.py:finish():203] Stopping system monitor
+2024-05-20 19:20:04,776 DEBUG   SystemMonitor:2129093 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-05-20 19:20:04,777 INFO    HandlerThread:2129093 [interfaces.py:finish():200] Joined cpu monitor
+2024-05-20 19:20:04,777 DEBUG   SystemMonitor:2129093 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-05-20 19:20:04,777 INFO    HandlerThread:2129093 [interfaces.py:finish():200] Joined disk monitor
+2024-05-20 19:20:04,779 INFO    HandlerThread:2129093 [interfaces.py:finish():200] Joined gpu monitor
+2024-05-20 19:20:04,779 INFO    HandlerThread:2129093 [interfaces.py:finish():200] Joined memory monitor
+2024-05-20 19:20:04,779 INFO    HandlerThread:2129093 [interfaces.py:finish():200] Joined network monitor
+2024-05-20 19:20:04,779 DEBUG   SenderThread:2129093 [sender.py:send_request():405] send_request: defer
+2024-05-20 19:20:04,779 INFO    SenderThread:2129093 [sender.py:send_request_defer():609] handle sender defer: 2
+2024-05-20 19:20:04,779 INFO    SenderThread:2129093 [sender.py:transition_state():613] send defer: 3
+2024-05-20 19:20:04,779 DEBUG   SenderThread:2129093 [sender.py:send():378] send: stats
+2024-05-20 19:20:04,780 DEBUG   HandlerThread:2129093 [handler.py:handle_request():158] handle_request: defer
+2024-05-20 19:20:04,780 INFO    HandlerThread:2129093 [handler.py:handle_request_defer():184] handle defer: 3
+2024-05-20 19:20:04,781 DEBUG   SenderThread:2129093 [sender.py:send():378] send: history
+2024-05-20 19:20:04,781 DEBUG   SenderThread:2129093 [sender.py:send_request():405] send_request: summary_record
+2024-05-20 19:20:05,153 INFO    Thread-12 :2129093 [dir_watcher.py:_on_file_modified():288] file/dir modified: /nlsasfs/home/ai4bharat/praveens/srija/assignment_1/wandb/run-20240520_191646-ds2k5hqi/files/wandb-summary.json
+2024-05-20 19:20:05,154 INFO    SenderThread:2129093 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-20 19:20:05,154 DEBUG   SenderThread:2129093 [sender.py:send_request():405] send_request: defer
+2024-05-20 19:20:05,154 INFO    SenderThread:2129093 [sender.py:send_request_defer():609] handle sender defer: 3
+2024-05-20 19:20:05,154 INFO    SenderThread:2129093 [sender.py:transition_state():613] send defer: 4
+2024-05-20 19:20:05,154 DEBUG   HandlerThread:2129093 [handler.py:handle_request():158] handle_request: defer
+2024-05-20 19:20:05,154 INFO    HandlerThread:2129093 [handler.py:handle_request_defer():184] handle defer: 4
+2024-05-20 19:20:05,154 DEBUG   SenderThread:2129093 [sender.py:send_request():405] send_request: defer
+2024-05-20 19:20:05,154 INFO    SenderThread:2129093 [sender.py:send_request_defer():609] handle sender defer: 4
+2024-05-20 19:20:05,154 INFO    SenderThread:2129093 [sender.py:transition_state():613] send defer: 5
+2024-05-20 19:20:05,154 DEBUG   HandlerThread:2129093 [handler.py:handle_request():158] handle_request: defer
+2024-05-20 19:20:05,154 INFO    HandlerThread:2129093 [handler.py:handle_request_defer():184] handle defer: 5
+2024-05-20 19:20:05,155 DEBUG   SenderThread:2129093 [sender.py:send():378] send: summary
+2024-05-20 19:20:05,156 INFO    SenderThread:2129093 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-20 19:20:05,156 DEBUG   SenderThread:2129093 [sender.py:send_request():405] send_request: defer
+2024-05-20 19:20:05,156 INFO    SenderThread:2129093 [sender.py:send_request_defer():609] handle sender defer: 5
+2024-05-20 19:20:05,156 INFO    SenderThread:2129093 [sender.py:transition_state():613] send defer: 6
+2024-05-20 19:20:05,156 DEBUG   HandlerThread:2129093 [handler.py:handle_request():158] handle_request: defer
+2024-05-20 19:20:05,156 INFO    HandlerThread:2129093 [handler.py:handle_request_defer():184] handle defer: 6
+2024-05-20 19:20:05,157 DEBUG   SenderThread:2129093 [sender.py:send_request():405] send_request: defer
+2024-05-20 19:20:05,157 INFO    SenderThread:2129093 [sender.py:send_request_defer():609] handle sender defer: 6
+2024-05-20 19:20:05,157 INFO    SenderThread:2129093 [sender.py:transition_state():613] send defer: 7
+2024-05-20 19:20:05,157 DEBUG   HandlerThread:2129093 [handler.py:handle_request():158] handle_request: status_report
+2024-05-20 19:20:05,157 DEBUG   HandlerThread:2129093 [handler.py:handle_request():158] handle_request: defer
+2024-05-20 19:20:05,157 INFO    HandlerThread:2129093 [handler.py:handle_request_defer():184] handle defer: 7
+2024-05-20 19:20:05,157 DEBUG   SenderThread:2129093 [sender.py:send_request():405] send_request: defer
+2024-05-20 19:20:05,157 INFO    SenderThread:2129093 [sender.py:send_request_defer():609] handle sender defer: 7
+2024-05-20 19:20:05,696 DEBUG   HandlerThread:2129093 [handler.py:handle_request():158] handle_request: poll_exit
+2024-05-20 19:20:05,947 INFO    SenderThread:2129093 [sender.py:transition_state():613] send defer: 8
+2024-05-20 19:20:05,947 DEBUG   SenderThread:2129093 [sender.py:send_request():405] send_request: poll_exit
+2024-05-20 19:20:05,948 DEBUG   HandlerThread:2129093 [handler.py:handle_request():158] handle_request: defer
+2024-05-20 19:20:05,948 INFO    HandlerThread:2129093 [handler.py:handle_request_defer():184] handle defer: 8
+2024-05-20 19:20:05,948 DEBUG   SenderThread:2129093 [sender.py:send_request():405] send_request: defer
+2024-05-20 19:20:05,948 INFO    SenderThread:2129093 [sender.py:send_request_defer():609] handle sender defer: 8
+2024-05-20 19:20:05,948 INFO    SenderThread:2129093 [sender.py:transition_state():613] send defer: 9
+2024-05-20 19:20:05,949 DEBUG   HandlerThread:2129093 [handler.py:handle_request():158] handle_request: defer
+2024-05-20 19:20:05,949 INFO    HandlerThread:2129093 [handler.py:handle_request_defer():184] handle defer: 9
+2024-05-20 19:20:05,949 DEBUG   SenderThread:2129093 [sender.py:send_request():405] send_request: defer
+2024-05-20 19:20:05,949 INFO    SenderThread:2129093 [sender.py:send_request_defer():609] handle sender defer: 9
+2024-05-20 19:20:05,949 INFO    SenderThread:2129093 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-05-20 19:20:06,156 INFO    SenderThread:2129093 [dir_watcher.py:_on_file_modified():288] file/dir modified: /nlsasfs/home/ai4bharat/praveens/srija/assignment_1/wandb/run-20240520_191646-ds2k5hqi/files/wandb-summary.json
+2024-05-20 19:20:06,156 INFO    SenderThread:2129093 [dir_watcher.py:_on_file_modified():288] file/dir modified: /nlsasfs/home/ai4bharat/praveens/srija/assignment_1/wandb/run-20240520_191646-ds2k5hqi/files/output.log
+2024-05-20 19:20:06,156 INFO    SenderThread:2129093 [dir_watcher.py:finish():388] scan: /nlsasfs/home/ai4bharat/praveens/srija/assignment_1/wandb/run-20240520_191646-ds2k5hqi/files
+2024-05-20 19:20:06,157 INFO    SenderThread:2129093 [dir_watcher.py:finish():402] scan save: /nlsasfs/home/ai4bharat/praveens/srija/assignment_1/wandb/run-20240520_191646-ds2k5hqi/files/requirements.txt requirements.txt
+2024-05-20 19:20:06,157 INFO    SenderThread:2129093 [dir_watcher.py:finish():402] scan save: /nlsasfs/home/ai4bharat/praveens/srija/assignment_1/wandb/run-20240520_191646-ds2k5hqi/files/wandb-metadata.json wandb-metadata.json
+2024-05-20 19:20:06,157 INFO    SenderThread:2129093 [dir_watcher.py:finish():402] scan save: /nlsasfs/home/ai4bharat/praveens/srija/assignment_1/wandb/run-20240520_191646-ds2k5hqi/files/wandb-summary.json wandb-summary.json
+2024-05-20 19:20:06,158 INFO    SenderThread:2129093 [dir_watcher.py:finish():402] scan save: /nlsasfs/home/ai4bharat/praveens/srija/assignment_1/wandb/run-20240520_191646-ds2k5hqi/files/conda-environment.yaml conda-environment.yaml
+2024-05-20 19:20:06,160 INFO    SenderThread:2129093 [dir_watcher.py:finish():402] scan save: /nlsasfs/home/ai4bharat/praveens/srija/assignment_1/wandb/run-20240520_191646-ds2k5hqi/files/output.log output.log
+2024-05-20 19:20:06,162 INFO    SenderThread:2129093 [dir_watcher.py:finish():402] scan save: /nlsasfs/home/ai4bharat/praveens/srija/assignment_1/wandb/run-20240520_191646-ds2k5hqi/files/config.yaml config.yaml
+2024-05-20 19:20:06,166 INFO    SenderThread:2129093 [dir_watcher.py:finish():402] scan save: /nlsasfs/home/ai4bharat/praveens/srija/assignment_1/wandb/run-20240520_191646-ds2k5hqi/files/media/images/Class Images_0_4696b385407ad6b0987f.png media/images/Class Images_0_4696b385407ad6b0987f.png
+2024-05-20 19:20:06,166 INFO    SenderThread:2129093 [sender.py:transition_state():613] send defer: 10
+2024-05-20 19:20:06,166 DEBUG   HandlerThread:2129093 [handler.py:handle_request():158] handle_request: defer
+2024-05-20 19:20:06,166 INFO    HandlerThread:2129093 [handler.py:handle_request_defer():184] handle defer: 10
+2024-05-20 19:20:06,166 DEBUG   SenderThread:2129093 [sender.py:send_request():405] send_request: defer
+2024-05-20 19:20:06,166 INFO    SenderThread:2129093 [sender.py:send_request_defer():609] handle sender defer: 10
+2024-05-20 19:20:06,166 INFO    SenderThread:2129093 [file_pusher.py:finish():169] shutting down file pusher
+2024-05-20 19:20:06,696 DEBUG   HandlerThread:2129093 [handler.py:handle_request():158] handle_request: poll_exit
+2024-05-20 19:20:06,696 DEBUG   SenderThread:2129093 [sender.py:send_request():405] send_request: poll_exit
+2024-05-20 19:20:06,920 INFO    wandb-upload_0:2129093 [upload_job.py:push():130] Uploaded file /nlsasfs/home/ai4bharat/praveens/srija/assignment_1/wandb/run-20240520_191646-ds2k5hqi/files/requirements.txt
+2024-05-20 19:20:07,211 INFO    wandb-upload_1:2129093 [upload_job.py:push():130] Uploaded file /nlsasfs/home/ai4bharat/praveens/srija/assignment_1/wandb/run-20240520_191646-ds2k5hqi/files/wandb-summary.json
+2024-05-20 19:20:07,697 DEBUG   HandlerThread:2129093 [handler.py:handle_request():158] handle_request: poll_exit
+2024-05-20 19:20:07,697 DEBUG   SenderThread:2129093 [sender.py:send_request():405] send_request: poll_exit
+2024-05-20 19:20:08,258 INFO    wandb-upload_3:2129093 [upload_job.py:push():130] Uploaded file /nlsasfs/home/ai4bharat/praveens/srija/assignment_1/wandb/run-20240520_191646-ds2k5hqi/files/output.log
+2024-05-20 19:20:08,282 INFO    wandb-upload_2:2129093 [upload_job.py:push():130] Uploaded file /nlsasfs/home/ai4bharat/praveens/srija/assignment_1/wandb/run-20240520_191646-ds2k5hqi/files/conda-environment.yaml
+2024-05-20 19:20:08,448 INFO    wandb-upload_4:2129093 [upload_job.py:push():130] Uploaded file /nlsasfs/home/ai4bharat/praveens/srija/assignment_1/wandb/run-20240520_191646-ds2k5hqi/files/config.yaml
+2024-05-20 19:20:08,648 INFO    Thread-11 (_thread_body):2129093 [sender.py:transition_state():613] send defer: 11
+2024-05-20 19:20:08,649 DEBUG   HandlerThread:2129093 [handler.py:handle_request():158] handle_request: defer
+2024-05-20 19:20:08,649 INFO    HandlerThread:2129093 [handler.py:handle_request_defer():184] handle defer: 11
+2024-05-20 19:20:08,649 DEBUG   SenderThread:2129093 [sender.py:send_request():405] send_request: defer
+2024-05-20 19:20:08,649 INFO    SenderThread:2129093 [sender.py:send_request_defer():609] handle sender defer: 11
+2024-05-20 19:20:08,649 INFO    SenderThread:2129093 [file_pusher.py:join():175] waiting for file pusher
+2024-05-20 19:20:08,649 INFO    SenderThread:2129093 [sender.py:transition_state():613] send defer: 12
+2024-05-20 19:20:08,649 DEBUG   HandlerThread:2129093 [handler.py:handle_request():158] handle_request: defer
+2024-05-20 19:20:08,650 INFO    HandlerThread:2129093 [handler.py:handle_request_defer():184] handle defer: 12
+2024-05-20 19:20:08,650 DEBUG   SenderThread:2129093 [sender.py:send_request():405] send_request: defer
+2024-05-20 19:20:08,650 INFO    SenderThread:2129093 [sender.py:send_request_defer():609] handle sender defer: 12
+2024-05-20 19:20:08,650 INFO    SenderThread:2129093 [file_stream.py:finish():601] file stream finish called
+2024-05-20 19:20:08,697 DEBUG   HandlerThread:2129093 [handler.py:handle_request():158] handle_request: poll_exit
+2024-05-20 19:20:09,234 INFO    SenderThread:2129093 [file_stream.py:finish():605] file stream finish is done
+2024-05-20 19:20:09,234 INFO    SenderThread:2129093 [sender.py:transition_state():613] send defer: 13
+2024-05-20 19:20:09,234 DEBUG   SenderThread:2129093 [sender.py:send_request():405] send_request: poll_exit
+2024-05-20 19:20:09,234 DEBUG   HandlerThread:2129093 [handler.py:handle_request():158] handle_request: defer
+2024-05-20 19:20:09,235 INFO    HandlerThread:2129093 [handler.py:handle_request_defer():184] handle defer: 13
+2024-05-20 19:20:09,235 DEBUG   SenderThread:2129093 [sender.py:send_request():405] send_request: defer
+2024-05-20 19:20:09,235 INFO    SenderThread:2129093 [sender.py:send_request_defer():609] handle sender defer: 13
+2024-05-20 19:20:09,235 INFO    SenderThread:2129093 [sender.py:transition_state():613] send defer: 14
+2024-05-20 19:20:09,235 DEBUG   HandlerThread:2129093 [handler.py:handle_request():158] handle_request: defer
+2024-05-20 19:20:09,235 DEBUG   SenderThread:2129093 [sender.py:send():378] send: final
+2024-05-20 19:20:09,235 INFO    HandlerThread:2129093 [handler.py:handle_request_defer():184] handle defer: 14
+2024-05-20 19:20:09,235 DEBUG   SenderThread:2129093 [sender.py:send():378] send: footer
+2024-05-20 19:20:09,235 DEBUG   SenderThread:2129093 [sender.py:send_request():405] send_request: defer
+2024-05-20 19:20:09,235 INFO    SenderThread:2129093 [sender.py:send_request_defer():609] handle sender defer: 14
+2024-05-20 19:20:09,236 DEBUG   HandlerThread:2129093 [handler.py:handle_request():158] handle_request: poll_exit
+2024-05-20 19:20:09,236 DEBUG   SenderThread:2129093 [sender.py:send_request():405] send_request: poll_exit
+2024-05-20 19:20:09,236 DEBUG   HandlerThread:2129093 [handler.py:handle_request():158] handle_request: poll_exit
+2024-05-20 19:20:09,236 DEBUG   SenderThread:2129093 [sender.py:send_request():405] send_request: poll_exit
+2024-05-20 19:20:09,236 DEBUG   HandlerThread:2129093 [handler.py:handle_request():158] handle_request: server_info
+2024-05-20 19:20:09,236 DEBUG   SenderThread:2129093 [sender.py:send_request():405] send_request: server_info
+2024-05-20 19:20:09,238 DEBUG   HandlerThread:2129093 [handler.py:handle_request():158] handle_request: get_summary
+2024-05-20 19:20:09,238 DEBUG   HandlerThread:2129093 [handler.py:handle_request():158] handle_request: sampled_history
+2024-05-20 19:20:09,238 DEBUG   HandlerThread:2129093 [handler.py:handle_request():158] handle_request: internal_messages
+2024-05-20 19:20:09,569 INFO    MainThread:2129093 [wandb_run.py:_footer_history_summary_info():3994] rendering history
+2024-05-20 19:20:09,570 INFO    MainThread:2129093 [wandb_run.py:_footer_history_summary_info():4026] rendering summary
+2024-05-20 19:20:09,570 INFO    MainThread:2129093 [wandb_run.py:_footer_sync_info():3953] logging synced files
+2024-05-20 19:20:09,570 DEBUG   HandlerThread:2129093 [handler.py:handle_request():158] handle_request: shutdown
+2024-05-20 19:20:09,570 INFO    HandlerThread:2129093 [handler.py:finish():882] shutting down handler
+2024-05-20 19:20:10,236 INFO    WriterThread:2129093 [datastore.py:close():296] close: /nlsasfs/home/ai4bharat/praveens/srija/assignment_1/wandb/run-20240520_191646-ds2k5hqi/run-ds2k5hqi.wandb
+2024-05-20 19:20:10,569 INFO    SenderThread:2129093 [sender.py:finish():1545] shutting down sender
+2024-05-20 19:20:10,569 INFO    SenderThread:2129093 [file_pusher.py:finish():169] shutting down file pusher
+2024-05-20 19:20:10,569 INFO    SenderThread:2129093 [file_pusher.py:join():175] waiting for file pusher
