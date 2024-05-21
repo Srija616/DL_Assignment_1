@@ -1,7 +1,7 @@
 # DL_Assignment_1
 To run the training, please run the following command from the assignment_1 directory. This will use the default configuration
 ```python
-python train.py
+python train.py --wandb_entity myname --wandb_project myprojectname
 ```
 
 Arguments to be given:
