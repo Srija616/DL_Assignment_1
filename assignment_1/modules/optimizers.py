@@ -2,6 +2,18 @@ from core.classes import Optimizer
 import numpy as np
 
 class GradientDescent(Optimizer):
+    """
+    Gradient Descent
+
+    Methods
+    -------
+    __init__(parameters: list, learning_rate: float=1e-3) -> None
+        Initializes the optimizer with parameters and learning rate.
+    step(*args) -> None
+        Updates parameters using gradient descent.
+    zero_grad(*args) -> None
+        Resets gradients to zero.
+    """
     def __init__(self, parameters: list, learning_rate: float=1e-3) -> None:
         super().__init__()
         self.parameters = parameters
@@ -18,6 +30,18 @@ class GradientDescent(Optimizer):
             layer['db'] = np.zeros_like(layer['db'])
 
 class SGDM(Optimizer):
+    """
+    Stochastic Gradient Descent with Momentum (SGDM) optimizer.
+
+    Methods
+    -------
+    __init__(parameters: list, learning_rate: float=1e-3, momentum: float=0.9, epsilon: float=1e-12) -> None
+        Initializes the optimizer with parameters, learning rate, momentum, and epsilon.
+    step(n_iter: int) -> None
+        Updates parameters using SGDM.
+    zero_grad(*args) -> None
+        Resets gradients to zero.
+    """
     def __init__(self, parameters: list, learning_rate: float=1e-3, momentum: float=0.9, epsilon: float=1e-12) -> None:
         super().__init__()
         self.parameters = parameters
@@ -41,6 +65,18 @@ class SGDM(Optimizer):
             layer['db'] = np.zeros_like(layer['db'])
 
 class Nesterov(Optimizer):
+    """
+    Nesterov Accelerated Gradient (NAG) optimizer.
+
+    Methods
+    -------
+    __init__(parameters: list, learning_rate: float=1e-3, momentum: float=0.9, epsilon: float=1e-12) -> None
+        Initializes the optimizer with parameters, learning rate, momentum, and epsilon.
+    step(n_iter: int) -> None
+        Updates parameters using NAG.
+    zero_grad(*args) -> None
+        Resets gradients to zero.
+    """
     def __init__(self, parameters: list, learning_rate: float=1e-3, momentum: float=0.9, epsilon: float=1e-12) -> None:
         super().__init__()
         self.parameters = parameters
@@ -66,6 +102,18 @@ class Nesterov(Optimizer):
             layer['db'] = np.zeros_like(layer['db'])
 
 class RMSProp(Optimizer):
+    """
+    RMSProp optimizer.
+
+    Methods
+    -------
+    __init__(parameters: list, learning_rate: float=1e-3, momentum: float=0.9, epsilon: float=1e-12) -> None
+        Initializes the optimizer with parameters, learning rate, momentum, and epsilon.
+    step(n_iter: int) -> None
+        Updates parameters using RMSProp.
+    zero_grad(*args) -> None
+        Resets gradients to zero.
+    """
     def __init__(self, parameters: list, learning_rate: float=1e-3, momentum: float=0.9, epsilon: float=1e-12) -> None:
         super().__init__()
         self.parameters = parameters
@@ -91,6 +139,18 @@ class RMSProp(Optimizer):
             layer['db'] = np.zeros_like(layer['db'])
 
 class Adam(Optimizer):
+    """
+    Adam optimizer.
+
+    Methods
+    -------
+    __init__(parameters: list, learning_rate: float=1e-3, beta_1: float=0.9, beta_2: float=0.995, epsilon: float=1e-8) -> None
+        Initializes the optimizer with parameters, learning rate, beta values, and epsilon.
+    step(n_iter: int) -> None
+        Updates parameters using Adam.
+    zero_grad(*args) -> None
+        Resets gradients to zero.
+    """
     def __init__(self, parameters: list, learning_rate: float=1e-3, beta_1: float=0.9, beta_2: float=0.995, epsilon: float=1e-8) -> None:
         super().__init__()
         self.parameters = parameters
@@ -120,6 +180,18 @@ class Adam(Optimizer):
             layer['db'] = np.zeros_like(layer['db'])
 
 class Nadam(Optimizer):
+    """
+    Nadam optimizer.
+
+    Methods
+    -------
+    __init__(parameters: list, learning_rate: float=1e-3, beta_1: float=0.9, beta_2: float=0.995, epsilon: float=1e-6) -> None
+        Initializes the optimizer with parameters, learning rate, beta values, and epsilon.
+    step(n_iter: int) -> None
+        Updates parameters using Nadam.
+    zero_grad(*args) -> None
+        Resets gradients to zero.
+    """
     def __init__(self, parameters: list, learning_rate: float=1e-3, beta_1: float=0.9, beta_2: float=0.995, epsilon: float=1e-6) -> None:
         super().__init__()
         self.parameters = parameters

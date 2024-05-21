@@ -2,6 +2,20 @@ import numpy as np
 from core.classes import Layer
 
 class Linear(Layer):
+    """
+    Methods
+    -------
+    __init__(input_size: int, output_size: int, init_strategy: str="he") -> None
+        Initializes the layer with input size, output size, and weight initialization strategy.
+    init_weights(strategy: str="he") -> None
+        Initializes weights using the specified strategy.
+    forward(x: np.ndarray) -> np.ndarray
+        Computes the forward pass.
+    backward(grad: np.ndarray) -> np.ndarray
+        Computes the backward pass.
+    __call__(x: np.ndarray) -> np.ndarray
+        Calls the forward method.
+    """
     def __init__(self, input_size: int, output_size: int, init_strategy: str="he") -> None:
         super().__init__()
         self.input_size = input_size
@@ -39,6 +53,20 @@ class Linear(Layer):
         return self.forward(x)
     
 class Dropout(Layer):
+    """
+    Dropout layer for regularization.
+
+    Methods
+    -------
+    __init__(p: float=0.2) -> None
+        Initializes the layer with dropout probability.
+    forward(x: np.ndarray) -> np.ndarray
+        Applies dropout to the input.
+    backward(grad: np.ndarray) -> np.ndarray
+        Applies the dropout mask to the gradient.
+    __call__(x: np.ndarray) -> np.ndarray
+        Calls the forward method.
+    """
     def __init__(self, p: float=0.2) -> None:
         super().__init__()
         self.p = p

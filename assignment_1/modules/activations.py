@@ -2,6 +2,20 @@ import numpy as np
 from core.classes import Activation
 
 class Sigmoid(Activation):
+    """
+    Sigmoid activation function.
+
+    Methods
+    -------
+    __init__() -> None
+        Initializes the Sigmoid activation, setting up the cache.
+    forward(x: np.ndarray) -> np.ndarray
+        Applies the Sigmoid function to the input array and caches the result.
+    backward(grad: np.ndarray) -> np.ndarray
+        Computes the gradient of the Sigmoid function with respect to the input.
+    __call__(x: np.ndarray) -> np.ndarray
+        Enables the instance to be called as a function, applying the forward pass.
+    """
     
     def __init__(self) -> None:
         super().__init__()
@@ -21,7 +35,20 @@ class Sigmoid(Activation):
         return self.forward(x)
 
 class Tanh(Activation):
-        
+    """
+    Tanh activation function.
+
+    Methods
+    -------
+    __init__() -> None
+        Initializes the Tanh activation, setting up the cache.
+    forward(x: np.ndarray) -> np.ndarray
+        Applies the Tanh function to the input array and caches the result.
+    backward(grad: np.ndarray) -> np.ndarray
+        Computes the gradient of the Tanh function with respect to the input.
+    __call__(x: np.ndarray) -> np.ndarray
+        Enables the instance to be called as a function, applying the forward pass.
+    """
     def __init__(self) -> None:
         super().__init__()
         self.cache['y'] = []
@@ -40,6 +67,20 @@ class Tanh(Activation):
         return self.forward(x)
 
 class ReLU(Activation):
+    """
+    ReLU (Rectified Linear Unit) activation function.
+
+    Methods
+    -------
+    __init__() -> None
+        Initializes the ReLU activation, setting up the cache.
+    forward(x: np.ndarray) -> np.ndarray
+        Applies the ReLU function to the input array.
+    backward(grad: np.ndarray) -> np.ndarray
+        Computes the gradient of the ReLU function with respect to the input.
+    __call__(x: np.ndarray) -> np.ndarray
+        Enables the instance to be called as a function, applying the forward pass.
+    """
             
     def __init__(self) -> None:
         super().__init__()
@@ -59,7 +100,21 @@ class ReLU(Activation):
         return self.forward(x)
 
 class Softmax(Activation):
-                
+    """
+    Softmax activation function.
+
+    Methods
+    -------
+    __init__() -> None
+        Initializes the Softmax activation, setting up the cache.
+    forward(x: np.ndarray) -> np.ndarray
+        Applies the Softmax function to the input array and caches the result.
+    backward(grad: np.ndarray) -> np.ndarray
+        Computes the gradient of the Softmax function with respect to the input.
+    __call__(x: np.ndarray) -> np.ndarray
+        Enables the instance to be called as a function, applying the forward pass.
+    """
+
     def __init__(self) -> None:
         super().__init__()
 
@@ -88,7 +143,20 @@ class Softmax(Activation):
 
 
 class LogSoftmax(Activation):
+    """
+    LogSoftmax activation function.
 
+    Methods
+    -------
+    __init__() -> None
+        Initializes the LogSoftmax activation, setting up the cache.
+    forward(x: np.ndarray) -> np.ndarray
+        Applies the LogSoftmax function to the input array and caches the result.
+    backward(grad: np.ndarray) -> np.ndarray
+        Computes the gradient of the LogSoftmax function with respect to the input.
+    __call__(x: np.ndarray) -> np.ndarray
+        Enables the instance to be called as a function, applying the forward pass.
+    """
     def __init__(self):
         super().__init__()
 

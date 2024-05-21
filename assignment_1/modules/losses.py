@@ -2,6 +2,20 @@ from core.classes import Loss, Module
 import numpy as np
 
 class MSE(Loss):
+    """
+    Mean Squared Error (MSE) loss function.
+
+    Methods
+    -------
+    __init__(model: Module, regularize: str="none", alpha: float=5e-3) -> None
+        Initializes the MSE loss with a model, regularization type, and regularization strength.
+    forward(y_pred: np.ndarray, y_true: np.ndarray) -> np.float32
+        Computes the MSE loss and applies regularization.
+    grad() -> np.ndarray
+        Computes the gradient of the MSE loss with respect to the predictions.
+    __call__(y_pred: np.ndarray, y_true: np.ndarray) -> np.float32
+        Calls the forward method.
+    """
     def __init__(self, model: Module, regularize: str="none", alpha: float=5e-3) -> None:
         super().__init__(model)
         self.regularize = regularize
@@ -22,6 +36,20 @@ class MSE(Loss):
         return self.forward(y_pred, y_true)
 
 class CrossEntropy(Loss):
+    """
+    Cross-Entropy loss function.
+
+    Methods
+    -------
+    __init__(model: Module, regularize: str="none", alpha: float=5e-3) -> None
+        Initializes the Cross-Entropy loss with a model, regularization type, and regularization strength.
+    forward(y_pred: np.ndarray, y_true: np.ndarray) -> np.float32
+        Computes the Cross-Entropy loss and applies regularization.
+    grad() -> np.ndarray
+        Computes the gradient of the Cross-Entropy loss with respect to the predictions.
+    __call__(y_pred: np.ndarray, y_true: np.ndarray) -> np.float32
+        Calls the forward method.
+    """
     def __init__(self, model: Module, regularize: str="none", alpha: float=5e-3) -> None:
         super().__init__(model)
         self.regularize = regularize
@@ -41,6 +69,20 @@ class CrossEntropy(Loss):
         return self.forward(y_pred, y_true)
 
 class NLLLoss(Loss):
+    """
+    Negative Log-Likelihood (NLL) loss function.
+
+    Methods
+    -------
+    __init__(model: Module, regularize: str="none", alpha: float=5e-3) -> None
+        Initializes the NLL loss with a model, regularization type, and regularization strength.
+    forward(y_pred: np.ndarray, y_true: np.ndarray) -> np.float32
+        Computes the NLL loss and applies regularization.
+    grad() -> np.ndarray
+        Computes the gradient of the NLL loss with respect to the predictions.
+    __call__(y_pred: np.ndarray, y_true: np.ndarray) -> np.float32
+        Calls the forward method.
+    """
     def __init__(self, model, regularize: str="none", alpha: float=5e-3):
         super().__init__(model)
         # self.model = model

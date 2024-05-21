@@ -8,6 +8,8 @@ from typing import List, Tuple
 from sklearn.model_selection import train_test_split
 from keras.datasets import mnist, cifar10, fashion_mnist
 from argparse import ArgumentParser
+import matplotlib.pyplot as plt
+import seaborn as sns
 
 from core.classes import Module
 
@@ -120,7 +122,7 @@ def main():
         model = build_model(n_features, n_classes, hyperparameters)
         loss_fn = build_loss_model(model, n_classes, hyperparameters)
         optimizer = build_optimizer(model, hyperparameters, hyperparameters["optimizer"])
-        train(hyperparameters, model, loss_fn, optimizer, train_loader, val_loader)
+        train(hyperparameters, model, loss_fn, optimizer, train_loader, val_loader, test_loader)
 
     
 
@@ -194,7 +196,7 @@ def plot_images(data, labels, class_names=None, flatten=False):
     plt.close(fig)
 
 
-def train(hyperparameters, model, loss_fn, optimizer, train_loader, val_loader) -> None:
+def train(hyperparameters, model, loss_fn, optimizer, train_loader, val_loader, test_loader=None) -> None:
     val_loss, val_acc = 0, 0
     for epoch in range(hyperparameters["n_epochs"]):
         train_loss, train_acc = train_epoch(model, loss_fn, train_loader, optimizer)
@@ -208,6 +210,8 @@ def train(hyperparameters, model, loss_fn, optimizer, train_loader, val_loader) 
             "train_acc": train_acc,
             "val_acc": val_acc,
         }, step=epoch+1)
+    if test_loader:
+        test_epoch(model, loss_fn, test_loader, ['T-shirt/top', 'Trouser', 'Pullover', 'Dress', 'Coat', 'Sandal', 'Shirt', 'Sneaker', 'Bag', 'Ankle boot'])
 
 def train_epoch(model, loss_fn, train_loader, optimizer) -> None:
     train_loss = []
@@ -239,6 +243,54 @@ def val_epoch(model, loss_fn, val_loader) -> None:
     val_loss = np.mean(val_loss)
     val_acc = np.mean(val_acc)
     return val_loss, val_acc
+
+def test_epoch(model, loss_fn, test_loader, class_names) -> None:
+    test_loss = []
+    test_acc = []
+    plot_preds, plot_labels = [], []
+    for i, (images, labels) in enumerate(test_loader):
+        preds = model(images)
+        loss_fn(preds, labels)
+        plot_preds.append(preds)
+        plot_labels.append(labels)
+        test_loss.append(loss_fn.value)
+        test_acc.extend(np.mean(np.argmax(preds, axis=1) == np.argmax(labels, axis=1)))
+        print(preds.shape, labels.shape)
+        # preds = np.concatenate(plot_preds)
+        # labels = np.concatenate(plot_labels)
+    cm = np.zeros((len(class_names), len(class_names)))
+
+    for i in range(len(labels)):
+        predicted_class = np.argmax(preds[i])  # Get the predicted class index
+        true_class = np.argmax(labels[i])  # Get the true class index
+        cm[true_class, predicted_class] += 1
+
+    plot_confusion_matrix(cm, class_names)
+    test_loss = np.mean(test_loss)
+    test_acc = np.mean(test_acc)
+    return test_loss, test_acc
+
+def plot_confusion_matrix(cm, class_names, filename="confusion_matrix.png"):
+    """
+    Creates and saves a beautiful confusion matrix plot.
+
+    Args:
+        cm: Confusion matrix (2D NumPy array).
+        class_names: List of class names for the labels.
+        filename: Filename to save the plot (default: "confusion_matrix.png").
+    """
+
+    plt.figure(figsize=(10, 7))  # Adjust figure size for clarity
+    sns.heatmap(cm, annot=True, fmt=".2f", cmap="Blues", linewidths=0.5)  # Customize appearance
+    plt.xlabel("Predicted Label")
+    plt.ylabel("True Label")
+    plt.title("Confusion Matrix")
+    plt.xticks(range(len(class_names)), class_names, rotation=45, ha="right")  # Rotate x-axis labels
+    plt.yticks(range(len(class_names)), class_names)
+    plt.tight_layout()
+    plt.savefig(filename)  # Save the plot
+    plt.close()  # Close the plot figure
+
 
 def sweep(hyperparameters, train_loader, val_loader, n_features, n_classes) -> None:
     config = wandb.config
